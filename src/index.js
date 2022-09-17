@@ -1,13 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import CardAnimal from './components/CardAnimal';
 import './index.css';
-import App from './App';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import AnimalGalleryPage from './routes/AnimalGallery.page';
+import HomePage from './routes/Home.page';
+import NavbarPage from './routes/Navbar.page';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <NavbarPage />,
+    children: [
+      {
+        path: "/home",
+        element: <HomePage />,
+      },
+      {
+        path: "/cardAnimal",
+        element: <CardAnimal />,
+      },
+      {
+        path: "/animalGallery",
+        element: <AnimalGalleryPage />,
+      },
+    ],
+  },
+]);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
