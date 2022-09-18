@@ -77,6 +77,10 @@ li {
     font-size: 5rem;
 }
 
+.card{
+    text-align: center;
+}
+
 .card__home , .card__animal{
     align-items: center;
     background-color: #fff;
