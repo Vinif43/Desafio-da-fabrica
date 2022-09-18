@@ -112,6 +112,7 @@ li {
 
 h2{
     margin-top: 8px;
+    max-width: 300px;
 }
 
 button{
