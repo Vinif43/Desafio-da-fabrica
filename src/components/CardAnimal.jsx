@@ -33,7 +33,7 @@ function CardAnimal() {
               <p><strong>Diet:</strong> {animal.diet}</p>
               <p><strong>Localization:</strong> {animal.geo_range}</p>
             </div>
-            <button type="button" className="butao" onClick={getAnimal} >Geral novo animal</button>
+            <button type="button" className="butao" onClick={getAnimal} >New Animal</button>
           </article>
          
       </>
