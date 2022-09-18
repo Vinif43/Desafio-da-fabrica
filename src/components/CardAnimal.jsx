@@ -1,5 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Home from "./Home";
+import Navbar from "./Navbar";
 
 function CardAnimal() {
 
@@ -20,7 +22,7 @@ function CardAnimal() {
   
     return (
       <>
-          {/* <h1>Animal</h1> */}
+          <Navbar />
           <article className="card__animal">
             
             <img  src= {animal.image_link} />

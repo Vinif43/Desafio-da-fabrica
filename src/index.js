@@ -7,25 +7,20 @@ import reportWebVitals from './reportWebVitals';
 import AnimalGalleryPage from './routes/AnimalGallery.page';
 import HomePage from './routes/Home.page';
 import NavbarPage from './routes/Navbar.page';
+import CardAnimalPage from './routes/CardAnimal.page';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <NavbarPage />,
-    children: [
-      {
-        path: "/home",
-        element: <HomePage />,
-      },
-      {
-        path: "/cardAnimal",
-        element: <CardAnimal />,
-      },
-      {
-        path: "/animalGallery",
-        element: <AnimalGalleryPage />,
-      },
-    ],
+    path: "/home",
+    element: <HomePage/>,
+  },
+  {
+    path: "/cardAnimal",
+    element: <CardAnimalPage/>,
+  },
+  {
+    path: "/animalGallery",
+    element: <AnimalGalleryPage/>,
   },
 ]);
 

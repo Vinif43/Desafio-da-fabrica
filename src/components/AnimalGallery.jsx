@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import Home from "./Home";
 import ListaAnimal from "./ListaAnimal";
+import Navbar from "./Navbar";
 
 function AnimalGallery() {
 
@@ -21,7 +23,7 @@ function AnimalGallery() {
   
     return (
       <>
-          
+          <Navbar />
           <ListaAnimal animal={animal}/>
          
       </>
