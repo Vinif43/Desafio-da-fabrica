@@ -29,6 +29,7 @@ img {
     width: 100%;
 }
 
+/* NavBar */
 
 .navbar{
     margin-top: 8px;
@@ -68,6 +69,8 @@ li {
 .navbar a:active {
     color: rgb(230, 149, 9);
 }
+/* Fim da Navbar */
+
 
 .titulo__home{
     color: #015d00;
@@ -100,6 +103,10 @@ li {
     border-radius: 22px 22px 5px 5px;
 }
 
+h2{
+    margin-top: 8px;
+}
+
 .card__detail{
     background-color: #ffffff47;
     border-radius: 22px;
@@ -110,10 +117,11 @@ li {
     padding: 10px;
 }
 
-h2{
-    margin-top: 8px;
-    max-width: 300px;
+p {
+    padding: 3px;
 }
+
+
 
 button{
     background-color: #00704a;
@@ -135,13 +143,21 @@ button:hover{
 }
 
 @media screen and (max-width: 768px) {
+
+    .container{
+        margin-top: 10px;
+    }
+
     .card__home , .card__animal{
         max-width: 367px;
         padding: 30px 15px;
-        /* width: auto; */
     }
 
     .card__animal {
         padding: 0 0 13px 0;
+    }
+
+    h2 {
+        max-width: 300px;
     }
 }  
