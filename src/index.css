@@ -97,6 +97,7 @@ li {
 
 .container {
     border-radius: 22px;
+    margin-top: 10px;
 }
 
 .imggallery{
@@ -121,8 +122,6 @@ p {
     padding: 3px;
 }
 
-
-
 button{
     background-color: #00704a;
     border: none;
@@ -143,10 +142,6 @@ button:hover{
 }
 
 @media screen and (max-width: 768px) {
-
-    .container{
-        margin-top: 10px;
-    }
 
     .card__home , .card__animal{
         max-width: 367px;
