@@ -11,7 +11,7 @@ import CardAnimalPage from './routes/CardAnimal.page';
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <HomePage/>,
   },
   {
